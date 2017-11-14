@@ -1,0 +1,139 @@
+
+<html>
+<body>
+                 
+        <div style="position:fixed;top:200px;left:500px;">
+                        
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <div id="contactForm"  class="contactForm">
+                <div id="formHeader"   class="formHeader">
+
+        <h1 id="message">Contact us</h1>
+
+        <script type="text/javascript"> 
+        
+
+       
+         function val1()
+         { 
+        var name=document.getElementById("namelocation").value; 
+            
+        if(name=="")
+        {  
+        document.getElementById("call1").innerHTML="Please enter your name";  
+      
+        } else
+        {  
+        document.getElementById("call1").innerHTML="";  
+        }  
+    }
+
+    function val2()
+    {
+    var email=document.getElementById("emaillocation").value; 
+            
+    var emailfilter=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   
+         
+        if(email=="")  
+         {       
+                   document.getElementById("call2").innerHTML="Not a valid e-mail address";  
+                    }
+                    else if(  emailfilter.test(email)==false)
+                    {
+                        document.getElementById("call2").innerHTML="Not a valid e-mail address";  
+                    }
+                   else  
+                   {  
+                   document.getElementById("call2").innerHTML="";  
+                   status=true;
+                   }  
+
+                }
+        function val3()
+        {
+        var phone=document.getElementById("phonee").value;
+     
+
+        if(phone=="")
+        {  
+                document.getElementById("call3").innerHTML=  " Please enter your number";  
+                 }
+                else{  
+                document.getElementById("call3").innerHTML="";  
+              
+                }       
+                
+                }
+
+            function myfunction()
+                { 
+        var name=document.getElementById("namelocation").value; 
+            
+        if(name=="")
+        {  
+        document.getElementById("call1").innerHTML="Please enter your name";  
+      
+        } else
+        {  
+        document.getElementById("call1").innerHTML="";  
+        }  
+        var email=document.getElementById("emaillocation").value; 
+            
+        var emailfilter=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+         
+        if(email=="")  
+        {       
+                  document.getElementById("call2").innerHTML="Not a valid e-mail address";  
+                   }
+                   else if(  emailfilter.test(email)==false)
+                   {
+                       document.getElementById("call2").innerHTML="Not a valid e-mail address";  
+                   }
+                  else  
+                  {  
+                  document.getElementById("call2").innerHTML="";  
+                  status=true;
+                  }  
+
+                   var phone=document.getElementById("phonee").value;
+     
+
+        if(phone=="")
+        {  
+                document.getElementById("call3").innerHTML=  " Please enter your number";  
+                 }
+                else{  
+                document.getElementById("call3").innerHTML="";  
+              
+                }       
+                
+    }
+        
+           
+        
+    </script>  
+       <form>
+             
+        <table>
+                <tr><td>Name:</td><td><input type="text"  name="name" onblur="val1()"  value=""  id="namelocation" placeholder="enter your name" />  
+               <td id="call1"></td></tr>
+               <span  style="color:red" ></span></td>
+                       
+                <tr><td>email:</td><td><input type="text"  value=""  id="emaillocation"  name="email" onblur="val2()"  placeholder="vicky@domain.com"/> 
+                <td id="call2"></td></tr>
+                <span  style="color:red" ></span></td>
+
+                <tr><td>phone:</td><td><input type="text" name="phone"  value="" id="phonee"  onblur="val3()" placeholder="enter your number"/> 
+                <td id="call3"></td></tr>
+                <span  style="color:red" ></span></td>
+                
+                        
+        </table>
+                
+      
+        </form>  
+        <button onclick="myfunction()">Click me</button>
+        </body>
+        </html>

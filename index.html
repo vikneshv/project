@@ -1,0 +1,175 @@
+<html>
+    <head>
+
+    <title>linkit</title>
+    
+    <style>
+             body 
+                 {
+             background-image: url("simple_hd_wallpapers_1080p_027.jpg");
+             background-attachment:fixed;
+             background-repeat:no-repeat;
+             border-radius:0%;
+};
+    
+       
+    
+    </style>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            </head>
+
+
+     <body> 
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" id="new">NEWS1</a>
+      </div>
+      <ul class="nav navbar-nav">
+        
+          <li><a id="dot">about</a></li>
+          <li><a id="para">contact us</a></li>
+          <li><a id="fun">follow</a></li>
+      </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li> 
+           <li><a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </li>
+      </ul>
+      </div>
+      </nav>
+
+         <script type="text/javascript">
+
+              function startTime()
+              {
+              var today=new Date();
+              var hour=today.getHours();
+              var minute=today.getMinutes();
+              var second=today.getSeconds();
+      // add a zero in front of numbers<60
+              minute=checkTime(minute);
+              second=checkTime(second);
+              document.getElementById('time').innerHTML=hour+":"+minute+":"+second;
+              t=setTimeout('startTime()',500);
+              }
+      
+          function checkTime(i)
+          {
+           {
+             i=+i;
+           }
+            return i;
+          }
+
+
+        </script>
+      </head>
+
+
+      <h1 align="center">news1</h1>
+      <div class="container">
+        <h3>welcome </h3>
+        <p>read all.</p>
+      </div>
+  
+      <div style="width:120px;float:right;color:rgb(9, 61, 121); font-family:impact;font-size: 170%">
+      <body onload="startTime()">
+      <p id="time"></p>
+
+            </div>
+             <h2>Today current news </h2>
+      
+             <div id="demo">
+    
+              <h3><p style="color:rgb(2, 59, 102)
+              ;font-size: 80%;
+              font-family: Calibr;
+              ;"> The CBI had registered 77 cases and seven preliminary enquiries related to demonetisation of high denomination currency notes said the agency spokesperson, Abhishek Dayal at a press conference here on Wednesday.
+              The agency has reported illegal tender amounting to ₹395.19 crore from the cases registered.</h3></p>
+      
+              <h3><p style="color:rgb(2, 59, 102)
+              ;font-size: 80%;
+              font-family: Calibr;
+              ;">Through a release, the agency noted that they received 92 complaints from the public reporting such illegal exchanges in various organisations.
+              “Some private individuals (26) and 21 public servants (mainly from post office and banking sector) were nabbed with huge amounts of new currency. Since the restrictions on individuals in terms of withdrawals of new currency, investigation is to find out how they could come in possession of such amounts,’’ Mr. Dayal said.</h3></p>
+              <h3><p style="color:rgb(2, 59, 102)
+              ;font-size: 80%;
+              font-family: Calibr;">
+              The 84 cases, which also include seven preliminary enquiries relate to fraudulent exchange of demonetised notes at commercial banks, co-operative banks, post offices, railways and insurance company.</h3></p>
+              <h3><p style="color:rgb(2, 59, 102)
+              ;font-size: 80%;
+              font-family: Calibr;">
+              The CBI claimed that it was ensured that every information related to such violation of laws should be entertained and examined and if required, cases should be registered..</h3></p>
+             </div>
+    
+     <script>
+         $(document).ready(function(){
+         $('#new').click(function(){
+         $("#demo").load(" index.html");
+        });
+        });
+    </script>
+
+    
+    <script>
+    // function loadDoc() {
+    //   var xhttp = new XMLHttpRequest();
+    //   xhttp.onreadystatechange = function() {
+    //     if (this.readyState == 4 && this.status == 200) {
+    //       document.getElementById("demo").innerHTML = this.responseText;
+    //     }
+    //   };
+    //   xhttp.open("GET", "text.txt", true);
+    //   xhttp.send();
+    // }
+    
+    $(document).ready(function(){
+    $('#para').click(function(){
+        $("#demo").load("cat.html");
+    });
+    
+    });
+    
+    </script>
+
+    <script>
+     $(document).ready(function(){
+    $('#dot').click(function(){
+        $("#demo").load("about.html");
+    });
+    
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+    $('#fun').click(function(){
+    $("#demo").load("follow.html");
+    });
+    });
+    </script>
+
+
+
+    <div id="header" class="section">
+      <style type="text/css">
+        a:link {color:#435be1}    /* normal link */
+        a:visited {color:#dd0f0f;}/* visited link */
+        a:hover {color:#044077;}   /* mouse over link */
+        a:active {color:#435be1;}  /* selected link */
+      </style>                  
+   <ol>
+        <li><a href="index.html"_blank"">home </a></li>
+        <li><a href="vbn.html">Contact</a></li>
+        <li><a href="about.html">about</a></li>
+       
+    </ol>
+    
+  </body>
+    </html>
