@@ -1,0 +1,1 @@
+Let's start with a quick overview of committing to the Git repository.
